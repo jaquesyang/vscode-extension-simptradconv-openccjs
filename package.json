@@ -1,27 +1,30 @@
 {
   "name": "jaquesyang-simptradconv-openccjs",
-  "displayName": "Simp-Trad Convert With opencc-js",
+  "displayName": "Simp-Trad Convert with opencc-js",
   "description": "",
+  "icon": "static/icon.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.79.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaquesyang/vscode-extension-simptradconv-openccjs"
+  },
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    ""
-  ],
+  "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "simptradconv.conv2simp",
-        "title": "转换至简体中文"
+        "title": "%command.simptradconv.conv2simp%"
       },
       {
         "command": "simptradconv.conv2trad",
-        "title": "转换至繁体中文"
+        "title": "%command.simptradconv.conv2trad%"
       }
     ],
     "menus": {
@@ -59,5 +62,6 @@
     "mocha": "^10.2.0",
     "typescript": "^5.1.3",
     "@vscode/test-electron": "^2.3.2"
-  }
+  },
+  "l10n": "./l10n"
 }
