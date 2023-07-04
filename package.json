@@ -1,7 +1,7 @@
 {
   "name": "jaquesyang-simptradconv-openccjs",
-  "displayName": "Simp-Trad Convert with opencc-js",
-  "description": "",
+  "displayName": "Simplified and Traditional Chinese Convert",
+  "description": "Convert selection between Simplified and Traditional Chinese in vscode",
   "icon": "static/icon.png",
   "version": "0.0.1",
   "engines": {
