@@ -1,0 +1,63 @@
+{
+  "name": "jaquesyang-simptradconv-openccjs",
+  "displayName": "Simp-Trad Convert With opencc-js",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    ""
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "simptradconv.conv2simp",
+        "title": "转换至简体中文"
+      },
+      {
+        "command": "simptradconv.conv2trad",
+        "title": "转换至繁体中文"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "simptradconv.conv2simp",
+          "group": "simptradconv@1",
+          "when": "editorHasSelection"
+        },
+        {
+          "command": "simptradconv.conv2trad",
+          "group": "simptradconv@2",
+          "when": "editorHasSelection"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.79.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3",
+    "@vscode/test-electron": "^2.3.2"
+  }
+}
