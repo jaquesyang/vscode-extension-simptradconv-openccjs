@@ -16,3 +16,6 @@ This program is depends on [opencc-js](https://github.com/nk2028/opencc-js).
 Contributions are welcome, either via [issues](https://github.com/jaquesyang/vscode-extension-simptradconv-openccjs/issues/new) or [pull requests](https://github.com/jaquesyang/vscode-extension-simptradconv-openccjs/compare).
 
 **Enjoy It!**
+
+## License
+MIT
