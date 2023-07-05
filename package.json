@@ -1,12 +1,14 @@
 {
-  "name": "jaquesyang-simptradconv-openccjs",
+  "name": "simptradconv-openccjs",
   "displayName": "Simplified and Traditional Chinese Convert",
   "description": "Convert selection between Simplified and Traditional Chinese in vscode",
   "icon": "static/icon.png",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.79.0"
   },
+  "author": "Jaques Yang <jaques.yang@outlook.com>",
+  "publisher": "jqyang",
   "repository": {
     "type": "git",
     "url": "https://github.com/jaquesyang/vscode-extension-simptradconv-openccjs"
